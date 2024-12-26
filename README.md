@@ -25,84 +25,80 @@ Orchestration: Kubernetes (optional for scaling).
 Cloud Hosting: AWS/Heroku.
 ### Frontend (Optional Future Extension)
 React.js or Vue.js for the user interface.
-Microservices Architecture
+## Microservices Architecture
 This application is structured as independent microservices:
 
-1. User Service
+### 1. User Service
 Manages user authentication and profiles.
 Provides RESTful APIs for user-related operations.
 Database: PostgreSQL.
-2. Chat Service
+### 2. Chat Service
 Handles message storage and real-time communication.
 Integrates WebSocket for live updates.
 Database: MongoDB.
-3. Group Service
+### 3. Group Service
 Manages group creation, updates, and memberships.
 Provides APIs to fetch group details.
 Database: PostgreSQL.
-4. Notification Service
+### 4. Notification Service
 Sends email or push notifications for new messages or alerts.
 Integrates with third-party services like Twilio or SendGrid.
-5. Gateway Service
+### 5. Gateway Service
 Acts as a central API gateway for all client requests.
 Routes requests to appropriate microservices.
-Communication
-Inter-service communication is event-driven using RabbitMQ.
-Setup Instructions
-Prerequisites
-Install Node.js.
-Install Docker.
-Install RabbitMQ.
-(Optional) Install PostgreSQL and MongoDB.
-Clone Repository
+## Communication
+Inter-service communication is event-driven using RabbitMQ/kafka.
+## Setup Instructions
+### Prerequisites
+#### 1. Install Node.js.
+#### 2. Install Docker.
+#### 3. Install RabbitMQ.
+#### 4. (Optional) Install PostgreSQL and MongoDB.
+### Clone Repository
 bash
-Copy code
+
 git clone https://github.com/amh21-Ha/Chat-Application_DDD-microservice.git
 cd Chat-Application_DDD-microservice
-Build and Run with Docker
-Navigate to the project root.
-Build and start all services using Docker Compose:
-bash
-Copy code
-docker-compose up --build
-Access the application via:
-Frontend: http://localhost:3000 (if implemented)
-Backend: http://localhost:8000
-Run Locally
+
+### Build and Run with Docker
+1. Navigate to the project root.
+2. Build and start all services using Docker Compose:
+	bash
+	docker-compose up --build
+3. Access the application via:
+	Frontend: http://localhost:3000 (if implemented)
+	Backend: http://localhost:8000
+### Run Locally
 Start individual services:
-bash
-Copy code
-cd user-service
-npm install
-npm start
-API Endpoints
-User Service
-POST /users/register: Register a new user.
-POST /users/login: Login and receive a JWT.
-GET /users/profile: Fetch user profile.
-Chat Service
-POST /chats/send: Send a message.
-GET /chats/history: Retrieve chat history.
-Group Service
-POST /groups/create: Create a new group.
-GET /groups/:id: Fetch group details.
-Development Report
-Successes
-Successfully integrated RabbitMQ for event-driven communication.
-Built a modular architecture with clear domain boundaries.
-Real-time messaging using WebSocket is fast and responsive.
-Challenges
+	bash
+	cd user-service
+	npm install
+	npm start
+### API Endpoints
+### User Service
+	POST /users/register: Register a new user.
+	POST /users/login: Login and receive a JWT.
+	GET /users/profile: Fetch user profile.
+	Chat Service
+	POST /chats/send: Send a message.
+	GET /chats/history: Retrieve chat history.
+### Group Service
+	POST /groups/create: Create a new group.
+	GET /groups/:id: Fetch group details.
+### Development Report
+	Coming Soon
+### Challenges
 Managing eventual consistency between services.
 Debugging inter-service communication in a distributed setup.
-Lessons Learned
+### Lessons Learned
 Importance of designing bounded contexts in DDD.
 Effective use of event-driven patterns to decouple services.
-Next Steps
+### Next Steps
 Add advanced analytics for user engagement and message patterns.
 Extend notification service to include push notifications.
 Build a frontend interface using React.js.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## License
+
 
 Contact
 Author: Amha Haileslassie
