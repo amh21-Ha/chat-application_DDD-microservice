@@ -3,19 +3,19 @@
 The Chat Application with DDD Microservices is a scalable and modular real-time chat platform. Built using Domain-Driven Design (DDD) principles, this application is divided into distinct microservices, each handling a specific domain, such as user management, chat messaging, and notifications. The project demonstrates best practices in modern software architecture, event-driven communication, and cloud-ready deployment.
 
 ## Features
-	User Management: Secure user authentication and profile handling.
-	Real-Time Messaging: Private and group chat functionality using WebSocket.
-	Group Management: Create, update, and manage group chats and memberships.
-	Notifications: Receive email or push notifications for missed messages.
-	Scalability: Modular microservices architecture for easy scaling.
+User Management: Secure user authentication and profile handling.
+Real-Time Messaging: Private and group chat functionality using WebSocket.
+Group Management: Create, update, and manage group chats and memberships.
+Notifications: Receive email or push notifications for missed messages.
+Scalability: Modular microservices architecture for easy scaling.
 
 ## Technologies Used
 ### Backend
-	Languages & Frameworks:
+Languages & Frameworks:
 Node.js (Express.js)
 Python (optional for specific services like notifications)
-	Real-Time Communication: WebSocket (Socket.IO)
-	Message Queue: RabbitMQ and kafka for inter-service communication.
+Real-Time Communication: WebSocket (Socket.IO)
+Message Queue: RabbitMQ and kafka for inter-service communication.
 ### Database
 Relational: PostgreSQL for structured data (User and Group services).
 NoSQL: MongoDB for unstructured data (Chat service).
@@ -101,6 +101,6 @@ Build a frontend interface using React.js.
 
 
 ### Contact
-Author: Amha Haileslassie
-Email: amha.ha07@gmail.com
-GitHub: amh21-Ha
+	Author: Amha Haileslassie
+	Email: amha.ha07@gmail.com
+	GitHub: amh21-Ha
