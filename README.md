@@ -79,7 +79,7 @@ Start individual services:
 	POST /users/register: Register a new user.
 	POST /users/login: Login and receive a JWT.
 	GET /users/profile: Fetch user profile.
-	Chat Service
+###Chat Service
 	POST /chats/send: Send a message.
 	GET /chats/history: Retrieve chat history.
 ### Group Service
@@ -100,7 +100,7 @@ Build a frontend interface using React.js.
 ## License
 
 
-Contact
+### Contact
 Author: Amha Haileslassie
 Email: amha.ha07@gmail.com
 GitHub: amh21-Ha
