@@ -6,9 +6,8 @@ const UserRepository = require('../domain/user.repository');
 const EventPublisher = require('../infrastructure/event.publisher');
 
 class UserService {
-  constructor() {
-    this.userRepository = new UserRepository();
-    this.eventPublisher = new EventPublisher();
+  constructor(userRepository) {
+    this.userRepository = userRepository;
   }
 
   async register(username, email, password) {
