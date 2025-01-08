@@ -3,3 +3,4 @@ backEnd/user-service/package-lock.json
 backEnd/user-service/package.json
 backEnd/user-service/.env
 backEnd/user-service/Dockerfile
+backEnd/package.json
