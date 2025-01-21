@@ -1,10 +1,10 @@
 const express = require('express');
-const { connectDB, MessageModel } = require('./infrastructure/database/db');
-const { connectRabbitMQ, sendMessage } = require('./infrastructure/RabbitMQ/rabbit');
-const ChatRepository = require('./domain/repositories/ChatRepository');
-const ChatService = require('./domain/services/ChatService');
-const ChatController = require('./application/controllers/ChatController');
-const chatRoutes = require('./application/routes/chatRoutes');
+const { connectDB, MessageModel } = require('./infrastructure/db');
+const { connectRabbitMQ, sendMessage } = require('./infrastructure/rabbit');
+const ChatRepository = require('./domain/chat.repository');
+const ChatService = require('./domain/chat.service');
+const ChatController = require('./application/chat.controller');
+const chatRoutes = require('./application/chat.routes');
 
 const app = express();
 app.use(express.json());
