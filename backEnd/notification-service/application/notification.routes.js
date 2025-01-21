@@ -1,8 +1,8 @@
 const express = require('express');
-const NotificationController = require('../notification.controller');
-const NotificationRepository = require('../../domain/notification.repository');
-const NotificationService = require('../../domain/notification.service');
-const { NotificationModel } = require('../../infrastructure/db');
+const NotificationController = require('./notification.controller');
+const NotificationRepository = require('.././domain/notification.repository');
+const NotificationService = require('.././domain/notification.service');
+const { NotificationModel } = require('.././infrastructure/db');
 
 const router = express.Router();
 const notificationRepository = new NotificationRepository(NotificationModel);
