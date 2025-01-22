@@ -3,8 +3,9 @@ class NotificationService {
         this.notificationRepository = notificationRepository;
     }
 
-    async sendNotification(userId, type, message) {
+    async sendNotification(notificationId, userId, type, message) {
         const notification = {
+            notificationId,
             userId,
             type,
             message,
